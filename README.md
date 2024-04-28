@@ -1,3 +1,3 @@
-#Laurel
+# Laurel
 
 <img src="cover.png"/>
