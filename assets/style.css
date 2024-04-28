@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Heebo:400,500,700|Playfair+Display:700");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Heebo;
+  background-color: var(--backgoundColor);
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  --backgoundColor: #0b1524;
+  --buttonColor: #f9425f;
+  --textColor: #7487a3;
+}
+body {
+  color: var(--textColor);
+  padding: 0 24px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+main {
+  padding-top: 83px;
+}
+
+/* Header */
+
+header {
+  width: 100%;
+  position: fixed;
+  padding: 24px 0;
+}
+
+/* Hero */
+section.hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.hero .left {
+  background-color: transparent;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  z-index: 1;
+}
+
+section.hero .left h1 {
+  background-color: transparent;
+  width: 100%;
+  font-size: 48px;
+  font-weight: 700;
+  font-family: "Playfair Display";
+  color: white;
+}
+
+section.hero .left p {
+  background-color: transparent;
+  width: 85%;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--textColor);
+}
+
+section.hero .left .buttons {
+  margin-top: 10px;
+  display: flex;
+  gap: 16px;
+}
+
+section.hero .left button {
+  font-size: 14px;
+  letter-spacing: 0px;
+  font-weight: 700;
+  line-height: 16px;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  justify-content: center;
+  padding: 16px 32px;
+  height: 48px;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: box-shadow 0.15s ease-in-out;
+  box-shadow: 0 8px 24px rgba(6, 16, 31, 0.25);
+}
+
+section.hero .left button::before {
+  content: "";
+  box-shadow: 0 8px 16px rgba(249, 66, 95, 0.25);
+  mix-blend-mode: normal;
+}
+
+.learnMore {
+  background-color: #273c5a;
+}
+
+.earlyAccess {
+  background-color: var(--buttonColor);
+}
+
+.earlyAccess:hover {
+  opacity: 0.8;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+section.hero .right {
+  position: relative;
+  z-index: 0;
+}
+
+section.hero .right .illustratuion {
+  position: absolute;
+  top: -318px;
+  left: -257px;
+  pointer-events: none;
+}
+
+section.hero .right img {
+  background-color: transparent;
+  position: relative;
+  width: 350px;
+  height: auto;
+  margin: 0 auto;
+  transform: translateY(40px);
+  transition: opacity 0.6s cubic-bezier(0.5, -0.01, 0, 1.005),
+    transform 0.6s cubic-bezier(0.5, -0.01, 0, 1.005);
+}
